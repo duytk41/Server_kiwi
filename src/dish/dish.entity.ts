@@ -6,14 +6,10 @@
 export class Dish {
     id: string;
     name: string;
-    dateOfBirth: string;
-    dishname: string;
-    password: string;
-    phone: string; // Số điện thoại
-    avatar: string; // ảnh đại diện lấy bằng url
-    email: string;
-    address: string;
-    searchHistory: string[]; // Lịch sử tìm kiếm
-    orders: string[]; // Lịch sử đặt hàng
-    cart: string[]; // Giỏ hàng
+    cover: string;
+    price: number;
+    time: number;
+    maximumPOrder: number;
+    restaurantID: string;
+    status: string;
 }

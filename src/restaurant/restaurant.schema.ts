@@ -8,41 +8,35 @@ export type RestaurantDocument = Restaurant & Document;
 // Schema: định nghĩa cấu trúc của document
 @Schema()
 export class Restaurant {
-    @Prop({})
+    // ID
+    // name
+    // cover
+    // time
+    // userID
+    // dateCreated
+    // status
+
+    @Prop({required: true})
     id: string;
 
     @Prop({})
     name: string;
 
-    @Prop({ })
-    dateOfBirth: string;
-
-    @Prop({ required: true , unique: true})
-    restaurantname: string;
-
-    @Prop({required: true})
-    password: string;
+    @Prop({})
+    cover: string;
 
     @Prop({})
-    phone: string; // Số điện thoại
+    time: number;
 
     @Prop({})
-    avatar: string; // ảnh đại diện lấy bằng url
+    userID: string;
 
     @Prop({})
-    email: string;
+    dateCreated: string;
 
     @Prop({})
-    address: string;
-
-    @Prop({})
-    searchHistory: string[]; // Lịch sử tìm kiếm
-
-    @Prop({})
-    orders: string[]; // Lịch sử đặt hàng
-
-    @Prop({})
-    cart: string[]; // Giỏ hàng
+    status: string;
+    
 }
 
 // Tạo ra một schema từ model

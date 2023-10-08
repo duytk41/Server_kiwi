@@ -13,6 +13,7 @@ export class User {
     avatar: string; // ảnh đại diện lấy bằng url
     email: string;
     address: string;
+    dateCreated: string; // Ngày tạo tài khoản
     searchHistory: string[]; // Lịch sử tìm kiếm
     orders: string[]; // Lịch sử đặt hàng
     cart: string[]; // Giỏ hàng

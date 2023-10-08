@@ -8,41 +8,31 @@ export type DishDocument = Dish & Document;
 // Schema: định nghĩa cấu trúc của document
 @Schema()
 export class Dish {
-    @Prop({})
+    @Prop({required: true})
     id: string;
 
     @Prop({})
     name: string;
 
-    @Prop({ })
-    dateOfBirth: string;
-
-    @Prop({ required: true , unique: true})
-    dishname: string;
-
-    @Prop({required: true})
-    password: string;
+    @Prop({})
+    cover: string;
 
     @Prop({})
-    phone: string; // Số điện thoại
+    price: number;
 
     @Prop({})
-    avatar: string; // ảnh đại diện lấy bằng url
+    time: number;
 
     @Prop({})
-    email: string;
+    maximumPOrder: number;
 
     @Prop({})
-    address: string;
+    restaurantID: string;
 
     @Prop({})
-    searchHistory: string[]; // Lịch sử tìm kiếm
+    status: string;
+    
 
-    @Prop({})
-    orders: string[]; // Lịch sử đặt hàng
-
-    @Prop({})
-    cart: string[]; // Giỏ hàng
 }
 
 // Tạo ra một schema từ model

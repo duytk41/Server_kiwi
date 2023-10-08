@@ -36,6 +36,9 @@ export class User {
     address: string;
 
     @Prop({})
+    dateCreated: string; // Ngày tạo tài khoản
+
+    @Prop({})
     searchHistory: string[]; // Lịch sử tìm kiếm
 
     @Prop({})
